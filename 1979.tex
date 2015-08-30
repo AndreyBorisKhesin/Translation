@@ -13,505 +13,628 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows}
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
-\title{Catastrophe Theory}
+\title{The loss of stability of auto-oscillations near resonances}
 %\date{}                                           % Activate to display a given date or no date
 %\author{V.I.~Arnold, ~~~~ A.P.~Shapiro}
 \author{V.I.~Arnold}
 \begin{document}
 \maketitle
-{\fontsize{9pt}{1em}\selectfont
-Vladimir Igorovitch Arnold, a doctor of physical and mathematical sciences, is a
-professor at Moscow State University.
-He studies the theory of differential equations, classical and celestial
-mechanics, singularity theory, real algebraic geometry, and more.
-He wrote \textit{Ordinary Differential Equations} (1971), \textit{Mathematical
-Methods in Classical Mechanics} (1974), \textit{Additional Chapters to the
-Theory of Ordinary Differential Equations} (1978), and co-wrote \textit{Ergodic
-Problems in Classical Mechanics} with A.~Avez (1968).
-Arnold is a member of the National Mechanics Committee of the USSR, the vice
-president of the Moscow Mathematical Society, an honourary member of the London
-Mathematical Society, and a recipient of the Lenin Prize.}\\
-
-Catastrophe theory first appeared in Western print about ten years ago.
-Magazines such as ``News Week'' reported the revolution in mathematics as
-comparable to the invention of Newton's Calculus.
-It was claimed that this new science--catastrophe theory--was much more
-useful to humanity than mathematical analysis: while Newton's theories allowed
-for the study of smooth, continuous processes, catastrophe theory provided a
-universal method of study for all abrupt transitions, gaps, and sudden
-noticeable changes.
-Hundreds of scientific and near-scientific publications appeared.
-They applied catastrophe theory to wildly different objects, for example, the
-beating of a heart, geometric and physical optics, embryology, linguistics,
-experimental psychology, economics, hydrodynamics, geology, and the theory of
-elementary particles.
-Among published works about catastrophe theory there are studies about the
-effect of alcohol on drivers of various modes of transportation, the sturdiness
-of ships, prisoner rebellions, the behaviour of stock market players, modeling
-brain activity and mental disorders, and the politics of censorship pertaining
-to erotic literature.
-
-In the early 1970's, catastrophe theory quickly became a fashionable, widely
-advertised theory.
-Its universal pretenses reminded of the pseudo-scientific theories of the
-previous century.
-
-Pocket editions of the mathematical papers of the founder of catastrophe theory,
-the French mathematician R.~Thom, were republished and widely circulated.
-This had not happened in the mathematical world since the appearance of
-cybernetics, which, like catastrophe theory, mostly advertised itself.
-
-After the admirers of catastrophe theory came more sobering, critical papers.
-Some of these were printed in publications intended for the layman, bearing
-eloquent titles such as ``But he isn't wearing anything at all!''.
-Today there are reviews of papers that are critical of catastrophe
-theory.\footnote{Couckenheimer, J.~\textit{The catastrophe controversy}--``The
-Mathematical Intelligencer'', 1978, v.~1, \textnumero1, p.~15-21.}
-Today there no unanimity about the value of catastrophe theory.
-Below is the personal opinion of the author of the paper.\\
-
-\textbf{\centerline{H.~Whitney's Singularity Theory}}
-
-In 1955, American mathematician Hassler Whitney published his paper ``Mappings
-of the plane into the plane''\footnote{Whitney H.~Mappings of the plane into the
-plane--``Ann.~Math.'', 1955, v.~62, p.~374-470.}.
-It laid the foundation of a new mathematical theory--singularity theory for
-smooth mappings.
-
-To truly understand catastrophe theory, one must first be introduced to elements
-of Whitney's singularity theory.
-Singularity theory is a grandiose generalization of the study of maxima and
-minima of functions.
-In Whitney's theory, functions are replaced with mappings, in the simplest case
---mappings of surfaces onto the plane.
-
-The mapping of a surface onto the plane is a matching of every point on the
-surface with a point on the plane.
-If a point on the surface is defined by coordinates $(x_1,x_2)$ on the surface
-and a point on the plane is defined by coordinates $(y_1,y_2)$, the mapping is
-defined by a pair of functions:
-$$y_1=f_1(x_1,x_2),\quad y_2=f_2(x_1,x_2).$$
-Mappings of smooth surfaces onto the plane are all around us.
-In fact, most bodies that surround us are bounded by smooth surfaces.
-Visible outlines of bodies are just projections of the surfaces surrounding
-those bodies onto the eye's retina.
-If we were to take a closer look at the bodies that surround us, for example,
-the faces of people, we can study the singularities of the visible outlines.
-
-Whitney noticed that in cases of ``general position'', there are only two types
-of singularities.
-All more complicated singularities are destroyed at the slightest movement of
-the bodies or the direction of projection while singularities of these two types
-are stable and are preserved despite small deformations in the mapping.
-
-An example of a singularity of the first type (Whitney named it a fold) is the
-singularity of a mapping of the projection of a sphere onto the plane at point
-on its equator (Fig.~1 (Projection of the surface of a sphere onto a horizontal
-surface.
-A singularity arises on the equator of the sphere, which is called a fold.)).
-In local coordinates this singularity is defined by these formulas:
-$$y_1=x_1^2,\quad y_2=x_2$$
-Unsurprisingly, projecting surfaces of smooth bodies onto an eye's retina
-results in such a singularity in the common points.
-What is surprising is that other from this singularity, the fold, we regularly
-encounter exactly one other singularity, but almost never notice it.
-
-Whitney named this second singularity ``the assembly''.
-It results from projecting surfaces shown in Fig.~2 (The projection of the
-surface $y_1=x_1^3+x_1x_2$ onto the horizontal plane.
-There is a singularity called Whitney's assembly at 0.
-Three inverses of point $p$, $u$, $v$, and $w$, are shown.) onto the plane.
-This surface is defined by the formula $y_1=x_1^3+x_1x_2$ in a space with
-coordinates $(x_1,x_2,y_1)$ and is projected onto the horizontal plane
-$(y_1,y_2)$.
-
-This way, the mapping is defined in local coordinates by the formulas:
-$$y_1=x_1^3+x_1x_2,\quad y_2=x_2.$$
-
-On the horizontal plane of projection forms a half-cubic parabola with a return
-point (the peak) in the initial coordinates.
-This curve separates the horizontal plane into two distinct parts.
-Points in the smaller part each have three inverses (three points in the surface
-map to this point).
-Points in the larger part each have one.
-Upon approaching the curve from the smaller part of the projection, two inverses
-merge and disappear (this point contains a singularity, a fold); upon
-approaching the peak, all three inverses merge.
-
-Whitney proved that the assembly is stable, so any similar mapping has a
-similar singularity in a corresponding similar point (such a singularity, so
-that a deformed mapping in corresponding coordinates, near the indicated point
-is defined by the same formulas as the original mapping near the original point).
-Whitney also proved that any singularity of a smooth mapping of a surface onto
-the plane, if disturbed, will promptly ``collapse'' into folds and assemblies.
-
-In this manner, visible contours of smooth bodies in general position contain
-return points in places where the projections contain assemblies and do not
-contain other singularities: if we look closely, we can find these return points
-in the outlines of every face and body.
-Let us examine, for example, the surface of a smooth torus (let us say, an
-inflated tire).
-A torus is normally drawn as depicted in Fig.~3 (A standard depiction of a
-torus.).
-If the torus were transparent, we would see its outline, as depicted in Fig.~4
-(Singularities of the projection of a torus onto a plane: 4 assembly points are
-visible.): the corresponding mapping of a torus onto a plane contains 4 assembly
-points.
-In this manner, the ends of the lines of the visible outline in Fig.~3 are the
-return points.
-In these points the line of the visible outline contains a half-cubic singularity.
-
-Transparent tori are hard to come by.
-Let us examine another transparent body, a bottle.
-Fig.~5 (Bottleneck.
-Two assembly points are visible.) depicts a bottleneck; two assembly points are
-visible.
-By rocking the bottle, we can convince ourselves that the assemblies are stable.
-Thus we obtain convincing experimental confirmation of Whitney's theorem.
-
-After Whitney's pioneering work, singularity theory developed further.
-Today, it is one of the central areas of mathematics, where several paths
-intersect, linking the most abstract areas of mathematics (differential and
-algebraic geometry and topology, group theory, generating mappings,
-commutative algebra, complex space theory and so on) with the most applied areas
-(theory of motion stability of dynamical systems, theory of bifurcation of
-positions of equilibrium, geometric and wave optics and so on).\\
-
-\textbf{\centerline{Applications of Whitney's Theory}}
-
-Since smooth mappings are found ubiquitously, their singularities must be found
-everywhere as well.
-But since Whitney's theory provides a lot of information about singularities of
-mappings in general position, we can try to use this information to study a
-larger number of phenomena and processes in all areas of natural history.
-This simple idea is the entire essence of catastrophe theory.
-
-In the case where the mapping that is being examined is well-known enough, we
-are talking about more or less directly applying the mathematical theory of
-singularities to various natural phenomena.
-Such an application actually leads to useful results, for example, in elasticity
-theory and geometric optics (singularity theory of caustics and wavefronts,
-which we will talk more about later).
-
-However, in most works about catastrophe theory, we are usually talking about a
-much more debatable situation, when not only is the mapping that is being
-studied unknown, its own existence is rather problematic.
-
-Applications of singularity theory in these situations are characteristic of
-speculations.
-To provide an idea of such mappings, we will recreate the English mathematician
-C.~Zeeman's example of speculative application of Whitney's theory to the study
-of activities of a creative character\footnote{Zeeman E.C., Catastrophe
-theory; a reply to Thom.--In: Dynamical Systems Warwick, 1974, Lecture Notes in
-Mathematic 468.~Berlin--Heidelberg--New York, 1975.~p.~373.}.
-
-We will characterize the creative character (for example, of a scientist) with
-three parameters, called ``skill'', ``interest'', and ``achievements''.
-Apparently, there must be a correlation between these parameters.
-Thus appears a surface in three-dimensional space with coordinates $(S,I,A)$.
-
-Let us project this surface onto the plane $(S,I)$ alone the $A$ axis.
-For a surface in general position, the singularities are folds and assemblies
-(according to Whitney's theory).
-We claim that an assembly, positioned as shown on Fig.~6 (A diagram of change of
-achievements [$A$] of an artistic character depending on skill [$S$] and
-interest [$I$].
-With enough interest, increase in skill leads to a significant jump from
-``maniac'' to ``genius'', but an increase in interest that is not supported by
-an increase in skill leads to the ``genius--maniac'' catastrophe.) satisfactorily
-depicts the observed phenomena.
-
-In fact, let us observe how in these suggestions, the achievements of the
-scientist will change based on his skill and interest.
-If interest is low, then achievements monotonously and fairly slowly rise with
-skill.
-If interest is sufficiently high, then qualitatively new phenomena occur.
-In this case, achievements can rise with a jump as skill increases (such a jump
-will happen if, for example, skill and interest change along curve 1 on Fig.~6
-at point 2).
-The area of high achievements, which we finish in in this situation, is labeled
-``genii''.
-
-On the other hand, an increase in interest that is not supported with a
-corresponding increase in skill, leads to a catastrophe (on curve 3 at point 4,
-Fig.~6), where achievements fall with a jump and we finish in the area labeled
-``maniacs''.
-It is instructive that jumps from the state of ``genius'' to the state of
-``maniac'' and back happen on different curves.
-Thus, at a sufficiently high interest level, a genius and a maniac may have
-equal levels of skill and interest, but different achievements (and histories).
-
-The problems with the described model and the set of speculations analogous to
-it in catastrophe theory are too obvious to describe in detail.\\
-
-\textbf{\centerline{Catastrophe Machine}}
-
-Unlike the example described above, the application of singularity theory to the
-study of the bifurcations of points of balance is perfectly justified.
-
-In many rigid constructions, there are several points of balance in presence of
-the same external forces.
-Let us examine, for instance, a horizontal ruler whose ends are fixed, that is
-weighted down by a weight placed on the midpoint of the ruler.
-
-Along with the point of equilibrium where the ruler is bent downwards by the weight,
-another point is possible where is ruler is bent up like a bridge.
-
-As the weight is increased, there comes a point when a ``catastrophe'' or a
-``clap'' occurs: the ruler moves from one state to the other.
-Singularity theory is applicable to the study of such claps and its predictions
-are perfectly supported by experiment.
-
-For a visual illustration of applications of this type, there exist a large
-number of inventions.
-One of the simplest ones is called Zeeman's catastrophe machine and is depicted
-on Fig.~7.
-(Zeeman's catastrophe machine.
-$A$--board; $B$--cardboard disc; $C$--needle that the disc can revolve around;
-$D$--needle inserted only into the disc; $E$--needle inserted only into the
-board; $F$ and $G$--elastic bands; $H$--pencil; $I$--sheet of paper;
-$K$--catastrophe curve.
-As pencil $H$ moves, disc $B$ makes jumps when pencil $H$ crosses the
-catastrophe curve $K$.)
-
-Everyone can easily make their own catastrophe machine.
-For this, one needs a board (on Fig.~7--$A$) and, having cut out a cardboard
-disc ($B$), insert a needle into the disc's centre ($C$) and into the board so
-that the disc can rotate about its axis.
-Another needle ($D$) is inserted only into the edge of the disc, and a third
-($E$) only into the board.
-To complete the assembly of the machine, one only needs two rubber bands ($F$,
-$G$), a pencil ($H$), and a sheet of paper ($I$).
-
-After the needle at the edge of the disc has been attached to the motionless
-needle and to the pencil with elastic bands, the tip of the pencil is placed at
-some point on the sheet of paper, thus stretching the elastic bands.
-The disc is affixed in a certain position.
-Now, upon moving the tip of the pencil, the disc will rotate.
-It turns out, at a certain position of the tip of the pencil, a small change in
-said position is capable of producing a ``catastrophe'' i.e.~the disc will jump
-to a new position.
-If we marked the position of all of these ``catastrophes'' on the paper, we will
-get the ``catastrophe curve'' ($K$).
-
-It turns out that the catastrophe curve itself contains four return points.
-Upon crossing the catastrophe curve, a jump may or may not occur, depending on
-how the path of the tip of the pencil went around the return points of the
-catastrophe curve.
-
-If the reader were to experiment with this machine and tried to find a rule that
-determined if there will be a jump, the reader will easily be convinced of the
-necessity of a mathematical theory of the phenomenon and could better evaluate
-the contribution of the theory to its explanation.
-
-The state of the catastrophe machine is defined by three numbers.
-In fact, the position of the tip of the pencil is defined by two coordinates
-(called controlling parameters).
-The position of the disc is defined by one more number (the angle of the turn),
-which is also called the inner parameter of the system.
-If we determine all three numbers, we can determine the amount by which the
-elastic bands are stretched.
-This implies that the potential energy of the entire system can also be
-determined.
-The disc rotates in such a way as to minimize this energy (at least locally).
-For a fixed position of the pencil, the potential energy is a function of the
-position of the disc, i.e.~a function defined over a circle.
-This function can have, depending on the values of the defining parameters,
-one or several minima (Fig.~8a (Dependence of the potential energy of the system
-on the controlling and inner parameters.
-A jump from one minimum of potential energy to another occurs when one minimum
-gets ``eaten'' by an adjacent one.)).
-If upon changing the controlling parameters, the minimum changes smoothly, then
-a jump does not occur.
-A jump occurs at the values of the controlling parameters, for which the local
-minimum disappears, merged with the local minimum (Fig.~8b).
-After the jump, the disc ends up in a position corresponding to the other local
-minimum (Fig.~8c).
-
-Let us examine the three-dimensional space of the states of this machine.
-The states at which the disc is in equilibrium form a smooth surface in this
-space.
-Let us examine the projection of this surface onto the plane of the controlling
-parameters along the axis of the inner parameter (Fig.~9 (Diagram of the
-three-dimensional space of the sates of the catastrophe machine.
-If we were to move from point 1 along path 3, then as we intersect the
-catastrophe curve there will be a jump at point 2; if we were move along path 4,
-there will be no jump at point 2.)).
-This projection contains folds and assemblies.
-The projection of the points of the folds is the catastrophe curve.
-From Fig.~9 we see why changing the controlling parameters across the
-catastrophe line sometimes causes, and sometimes does not cause, a jump (this
-depends on which sheet of our surface corresponds to the position of the disc).
-Using this diagram, we can move from one point on the equilibrium surface to
-another without any jumps.
-
-The diagrams of most applications of catastrophe theory are the same as in the
-described examples.
-We assume that the process in question can be described by several controlling
-and inner parameters.
-Points of equilibrium if the process create a surface of one or another number
-of dimensions in this space.
-The projection of the equilibrium surface onto the controlling parameters plane
-can have singularities.
-We assume that these are singularities in general position.
-In this case, singularity theory predicts the geometry of these
-``catastrophes'', i.e.~jumps from one state of equilibrium to another upon a
-change in the controlling parameters.
-
-Applications of this type can be more or less justified depending on how
-justified the initial packages are.
-For example, in the theory of claps of rigid constructions and in the theory of
-ship tipping, predictions of the theory are fully confirmed by experiment.
-On the other hand, in biology, psychology, and social sciences (let us say, in
-applications to the theory of stock buyers' behaviour or the study of nervous
-disorders), the initial prepackages, like the conclusions of the theory have a
-more heuristic meaning.\\
-
-\textbf{\centerline{Caustics and Wavefronts}}
-
-One of the most important conclusions of the theory is the universality of
-several simple images, such as folds, assemblies, and return points, that
-should be ubiquitous and that are useful to learn to recognize.
-Other than the listed singularities, often we see several more singularities,
-that have also received their own names.
-Several of these are depicted in Fig.~10 (Standard singularities of caustics in
-general position in three-dimensional space: swallowtail ($a$), pyramid ($b$),
-and wallet ($c$).).
-
-Suppose that a perturbation is propagating in some medium (for example, an
-impact wave, light, or an epidemic).
-
-For simplicity, let us start with a flat scenario.
-Suppose that in the initial moment the perturbation existed on curve ``$a$''
-(Fig.~11 (Wavefront, propagating from curve ``$a$''.)) and that its speed of
-propagation is equal to 1.
-To figure out where the perturbation will be after time $t$, we must place a
-segment of length $t$ on every normal to the curve.
-The resultant curve is called a wavefront.
-
-Even if the initial wavefront did not contain any singularities, after some time
-singularities will start to appear.
-For example, upon propagation of a perturbation inside of an ellipse,
-singularities shown in Fig.~12 (Wavefront propagating inside of an ellipse.)
-appear.
-These singularities are stable (they are not destroyed by a small change in the
-initial front).
-With time, given a smooth starting front in general position, only standard
-singularities of the same type will form.
-
-With time, only return edges and standard ``swallowtail'' type singularities
-appear on a smooth wavefront in general position in three-dimensional space,
-depicted in Fig.~10a.
-But in individual moments, the front can experience other rearrangements, also
-of a standard type.
-These rearrangements are depicted in Fig.~13 (Five standard types of
-rearrangements of a wavefront in general position as it moves through
-three-dimensional space.).
-
-Right in line with wavefronts, the propagation process is described with the
-help of a system of rays.
-For example, the spread of perturbations inside of an ellipse can be described
-with the help of a system of internal normals to the ellipse (Fig.~14 (Internal
-normals to an ellipse.)).
-This family contains an envelope.
-The envelope of a family of rays is called a caustic (i.e.~``burning'', since
-at these points the light is concentrated).
-The caustic is easy to see on the inside surface of a cup lit by sunlight.
-The rainbow, which we see in the sky, is similarly described by the caustic of a
-system of rays that passed with total internal reflection through a droplet of
-water (Fig.~15 (Mechanism for the formation of a rainbow.
-Rays 1--7 after two refractions and one reflection in a droplet of water form
-angles from 0\degree~to 43\degree~with respect to the direction of the Sun.
-The density of the rays deflected at angles close the maximum possible ones is
-higher than that of those deflected at other angles.
-The caustic (outside the droplet)--is a line limiting the system of rays; it is
-very close to ray 5.)).
-
-The caustic of the elliptical front contains 4 return points.
-These singularities are stable: a front close to the ellipse will determine a
-caustic with the same singularities.
-Caustics in general position in three-dimensional space also only contain
-standard singularities.
-These singularities are called the swallowtail, the pyramid, and the wallet and
-are depicted in Fig.~10.
-
-Singularities of the propagating wavefront slide along the caustic.
-This phenomenon is easily observable when comparing Fig.~12 and Fig.~14, as well
-as Fig.~10 and Fig.~13.
-
-Singularities in caustics, fronts, and their rearrangements (Fig.~13 and Fig.\
-16 (Five standard types of rearrangements of a caustic.
-(This diagram is missing in essays on catastrophe theory and is, it seems, being
-published for the first time in this paper.))) are well observed in experiments
-and today it seems off why this theory did not exist two hundred years ago.
-However, the corresponding mathematical apparatus is non-trivial and is tied to
-areas of mathematics such as the classification of simple Lie algebras and
-Coxter's crystallographic groups; it is also tied (in a fairly mysterious way)
-to the classification of regular polyhedra in three-dimensional Euclidian
-space.\\
-
-\textbf{\centerline{Catastrophe Theory's Mysticism}}
-
-Applications of singularity theory in natural science does not put a cap on the
-directions of catastrophe theory: in line with specific studies such as Zeeman's
-work are more philosophic efforts of the mathematician Thom, who first realized
-the unifying character of Whitney's work in singularity theory (and preceding
-him, work by A.~Poincaré and A.A.~Andronov on bifurcation theory) introduced
-the term ``catastrophe theory'' and busied himself with its widespread
-propaganda.
-
-The characteristic feature of Thom's work in catastrophe theory is his peculiar
-style.
-Zeeman, a passionate follower of this style, noted that the meaning of Thom's
-words only becomes clear when one inserts 99 of his own lines between every pair
-of Thom's lines.
-
-To give the reader an opportunity to get an impression of this this style, I
-will include here an excerpt from an overview of his perspective of catastrophe
-theory, made by Thom in 1974.:
-
-``In the philosophic, metaphysical sense, catastrophe theory cannot bring about
-the answers to the big questions worrying mankind.
-But in encourages a dialectical, Heraclitian vision of the universe, a vision of
-the world as a stage of an endless battle between ``logos'', between archetypes.
-Catastrophe theory leads us to a deep polytheistic view: in everything we should
-discern the hands of gods.
-And here, maybe catastrophe theory will find inevitable limits of its practical
-applications.
-It will maybe divide the fate of psychoanalysis.
-There is no doubt that Freud's main psychological discoveries are true.
-And yet knowing these facts has brought little use (when curing mental
-disorders).
-Just like the hero of the Iliad could not resist the will of a god, say Athena,
-we also cannot limit the actions of the archetype without facing him with an
-archetype-antagonist, in a battle with an undetermined outcome.
-The same reasons that allow us to command our options to act in some situations,
-condemn us to impotence in others.
-Maybe we will be able to prove the inevitability of some catastrophes, such as
-plague or death.
-Knowledge will not necessarily be a promise of success or survival; it can also
-drive us to determination in our own demise''\footnote{Thom R.~Catastrophe
-theory: Its present state and future perspectives, ibid., p.~372.}.
-
-Luckily, singularity theory's excellent results do not depend on catastrophe
-theory's mysticism.\\
-
-\noindent\textbf{Recommended Literature}
-
-\noindent Whitney H.~Mappings of the plane into the plane.--''Ann.~Math.'',
-1955, v.~62, p.~374--470.
-
-\noindent Poston T., Stewart I.~Catastrophe Theory and its
-Applications.~Pitman, 1978.~(Currently being translated into Russian.)
-
-\noindent Thom R.~Stabilité Structurelle et Morphogénèse.~N.Y., 1972.
-
-\noindent Zeeman E.C.~Catastrophe Theory: Selected Papers
-(1972--1977).~Mass., 1977.
-
-\noindent Brekker T., Lander L.~Differentiable Germs and Catastrophes.~M.,
-1977.
-
-\noindent Golubitskii M., Giiemin V.~Stable Mappings and their
-singularities.~M., 1977.
+\centerline{\textbf{1. Choosing the number of parameters in bifurcation theory}}
+\vspace{1em}
+The loss of the stability of stationary or auto-oscillating modes is typically
+observed as a one-parametric phenomenon.
+The results of one-parametric study are well known.
+Upon change in parameter (e.g. Reynolds number) the eigenvalues of the
+linearized problem, for a certain critical value of the parameter, go to the
+minimal axis (or the multipliers of periodic motion--to the unit circle), after
+which we can observe either the rapid loss of stability (a transition from the
+starting to a distant mode of motion), or a soft one, i.e. appearance of
+auto-oscillations for the case of loss of stability of equilibrium and doubling
+of the period or the appearance of a two-part quasi-periodic mode for the case
+of a loss of periodic motion.
+The difference of the motion, appearing upon a gradual loss of stability, from
+the initial one is of the order of magnitude as the square root of the
+over-criticality (i.e. of the difference of the parameter from the critical
+values).
+
+This picture of loss of stability of equilibriums and auto-oscillations was
+known from the times of Poincar\'e and was throughly studied by A.A. Andronov and
+his school in the 30's.
+
+It turns out that many phenomena that occur from the loss of stability of
+auto-oscillations only become clear upon examination of two-parametric and not
+one-parametric families of oscillating systems.
+
+The choice of a natural number of parameters in one problem or another is a
+problem of the same character as choosing the number of degrees of freedom
+when describing a particular physical phenomenon.
+Taking additional parameters into account does not lead to significantly
+different results if the initial parameters were correctly chosen.
+
+A one-parametric point of view is natural when examining the degeneration of
+codimension one, i.e. phenomena, occurring on hypersurfaces (surfaces defined by
+one equation) in a functional (more generally speaking, infinite) space of all
+the systems of the class in question.
+These hypersurfaces can divide the functional space and occur naturally as
+boundaries of regions of different behaviours of the system (e.g. boundaries of
+the areas on stability etc.).
+
+With a small movement each individual system can be moved off of the degenerate
+hypersurface, and in this sense, degenerations do not occur in systems in
+general position.
+
+However in the one-parametric family the simplest degenerations occur as a fatal
+consequence of the small family.
+Indeed, a one-parametric family of systems represents a curve in the functional
+space of all systems.
+This curve can transversally intersect the hypersurface in functional space
+corresponding to the degeneration in question (say, the corresponding loss of
+stability).
+
+In this case any nearby curve also intersects our hypersurface (at a point
+near the intersection of the initial curve and the hypersurface).
+This way, even though it is possible to remove the degeneration for every fixed
+value of the parameter, it will still inevitably occur for some nearby value of
+the parameter.
+
+While studying one-parametric families, we can neglect the submapping of
+codimension two in the functional space of all systems.
+Indeed, if the curve is in the functional space representing our one-parametric
+family intersects this mapping of codimension two, then an arbitrarily small
+movement of this curve can move it off of the mapping.
+
+Mappings of codimension two in functional space correspond to double
+degenerations.
+The study of such degenerations should be conducted in two-parametric families.
+Upon examination of two-parametric families, double degenerations appear as
+irremovable in separate points of the plane parameters.
+Traces of hypersurfaces corresponding to single degenerations on this plane
+divide the regions of the points of double degenerations into sectors.
+This division is called a \textit{bifurcation diagram}.
+In each sector of the bifurcation diagram, the phase portrait of the system
+being examined is of a certain kind.
+Upon transitioning from one sector to another, a certain restructuring occurs,
+determined by the single degeneration on the boundary of the sector.
+In the most special point, the phase portrait degenerates most of all but this
+degenerate portrait is actually of least real interest to us: complicated
+degenerations should be examined not on their own, but in families with a number
+of parameters with which the degenerations become irremovable, and the answer
+must be given in the form of totality of bifurcation diagrams (``clock-face'')
+and phase portraits, corresponding to sectors, rays, and the centre of the
+diagram.
+
+Knowledge of bifurcations in a two-parametric family with a double degeneration
+allows us to learn a significant amount about phenomena occurring in
+one-parametric families.
+Indeed, let us examine a curve in general position on the plane of parameters
+in a two-parametric family passing near the special point of double
+degeneration.
+This line will cross, generally speaking, several sectors of the bifurcation
+diagram.
+This means that in a one-parametric family corresponding to the given curve,
+several subsequent reassemblies will occur, determined by which boundaries of
+the sectors the curve intersects.
+In this manner, local study of bifurcations in two-parametric families allows us
+to obtain information about several global reassemblies in one-parametric
+families (for example, information about bifurcations following the first loss
+of stability, which is rather difficult to achieve in any other way).\\
+
+\centerline{\textbf{2. Strong and wear resonances}}
+\vspace{1em}
+In the problem about loss of stability of periodic motion, we can immediately
+see one parameter that can be roughly imagined as the module of the
+multiplicator\footnote{Multiplicators of periodic motion are eigenvalues of the
+linearization of the function of the Poincar\'e series at a point corresponding to
+this periodic motion.} (loss of stability occurs upon its transformation to a
+unit).
+
+The second parameter in this problem is the argument of the multiplicator:
+the multiplicator can exit onto the unit circle at various points along it.
+If the argument of the multiplicator at the moment of its exit onto the unit
+circle is comparable to $2\pi$, then the spot has a \textit{resonance} upon loss
+of stability.
+This resonance is a double degeneration and must be studied in a two-parametric
+family.
+The two corresponding parameters have a simple physical interpretation: one of
+them is the decrement and the second is the detuning frequency of the resonance
+(the difference between the argument of the multiplicator and its resonance
+value).
+
+On the plane of these two parameters appears, as described above, a bifurcation
+diagram, whose sectors are responsible for different types of behaviour of the
+system.
+If in one-parametric family, loss of stability occurs near a resonance then this
+one-parametric family is portrayed by a curve on our bifurcation diagram,
+passing near the central point of the diagram.
+In this case our diagram can be used to read the sequence of reassemblies of
+types of motion, occurring near the loss of stability.
+By drawing distinct curves on the diagram, we get a finite collection of
+sequences of reassemblies, implemented in general one-parametric systems, losing
+stability near a resonance.
+
+Calculations show that most of the influence on the picture of loss of stability
+is by resonances of degrees $q=1,2,3,4$ (a resonance has degree $q$ if the
+multiplicator is equal to $\exp(2\pi ip/q)$.
+These resonances are called \textit{strong ILLEGIBLE}, arguments of the
+multiplicators of strong resonances ILLEGIBLE $0,\pm90,\pm120,180\degree$.
+
+Resonances of degree $q>4$ are called \textit{weak}.
+ILLEGIBLE resonance loss of stability occurs ILLEGIBLE in the non-resonance
+case.
+From this point of view, ``ILLEGIBLE'' from 360\degree~we should consider only
+angles ILLEGIBLE $\pm120,180\degree$, other angles are ``practically not
+ILLEGIBLE'' from 360\degree.
+
+The description of bifurcation diagrams and ILLEGIBLE near loss of stability in
+the neighbourhood of ILLEGIBLE is provided in later sections.
+
+It turns out that after some reduction (roughly ILLEGIBLE and ``discarding
+negligible terms'') ILLEGIBLE to the study of the bifurcation of phase portraits
+of vector fields on a plane, that are preserved upon a rotation by $2\pi/q$
+and generally depend on two parameters.
+
+The reduced differential equations corresponding to strong resonances have the
+form
+$$\begin{array}{ll}
+\ddot x=\alpha x+\beta+ax^2+bxy,&q=1;\\
+\ddot x=\alpha x+\beta y+ax^3+bx^2y,&q=2;\\
+\dot z=\epsilon z+Az|z|^2+\overline z^2,&q=3;\\
+\dot z=\epsilon z+Az|z|^2+\overline z^3,&q=4.
+\end{array}$$
+Here $y=\dot x$; $x,y,a,b$ are real and $z,\epsilon,A$ are complex numbers;
+the parameters of deformation are $\alpha$, $\beta$, and $\epsilon$; the values
+$a,b,\text{Re }A,\text{Im }A$ are non-zero.
+
+A view of bifurcation diagrams and phase portraits is provided in Fig.~1--5.
+In the cases of $q=1,2,$ or $3$, the answers depend only on the signs of
+$a,b,\text{Re }A,\text{Im }A$.
+
+In the case of q = 4, the plane of the complex variable $A$ is divided into a
+series of regions, in each of which the answer (the type of bifurcation diagrams
+and reassemblies) is distinct.
+The values of parameter $A$ over curves separating these regions do not need to
+be examined: they correspond to not a double but a triple degeneration (for the
+same reason we do not need to examine the cases
+$a=0,b=0,\text{Im }A,\text{Re }A$ where $q\neq4$).
+
+It should be underlined that despite the simplicity of the reduced equations,
+their study requires overcoming serious mathematical difficulties (mainly when
+studying questions about the number of edge cycles).
+
+The case $q=4$ still has not been fully studied; the pictures of reassemblies
+provided below are responsible for just several of the regions on the plane
+$A$.\\
+
+\centerline{\textbf{3. Poincar\'e's method of normal forms}}
+\vspace{1em}
+The foundation of bifurcation theory is Poincar\'e's method of normal forms,
+playing a role in the study of non-linear problems that is comparable to the
+role Fourier's method (a method of partitioning into natural oscillations) plays
+in linear theory.
+Even though this method, already developed in Poincar\'e thesis, has been known
+for over one hundred years, it only became widely applied to non-linear problems
+in the last decade.
+Now there are quite a few works where this method is applied to systems with a
+finite or with an infinite number of degrees of freedom.
+(Unfortunately, in today's time a method for systems of complete spectrum
+analogous to Poincar\'e's method of normal forms has not yet been developed.)
+
+The essence of Poincar\'e's method is that instead of searching for solutions of
+differential equations, we see diffeomorphisms (replacement variables), that
+transforms the equation to possible a simpler form.
+
+Let us examine, for example, a system that has a state of equilibrium near that
+state of equilibrium.
+Let us choose an origin in this state of equilibrium.
+Then the system of equations can be written in the form
+\begin{equation}
+\dot x=A(x),\quad A(x)=\Lambda x+B(x),
+\end{equation}
+where $\Lambda$ is the linear operator, $x=(x_1,\dots,x_n)$, and $B$ contains
+only terms higher than first degree of $x$.
+
+Let us suppose for simplicity, that all eigenvalues $\lambda_s$ of the $\Lambda$
+operator are distinct.
+Then we can choose a coordinate system such that the $\Lambda$ operator will be
+diagonalized, and in a linear approximation the system falls apart into
+one-dimensional ones.
+
+We will seek a replacement of coordinates $x=y+h(y)$, where $h$ means terms
+higher than first degree, so that we can try to eliminate terms higher than
+first degree on the right side of system (1).
+It turns out that in the general (``non-resonance'') case, we can use a
+convenient replacement of coordinates to completely eliminate all non-linear
+terms in the Taylor series on the right side of the system at zero.
+
+Let us evaluate the right side of (1) in the new system of coordinates.
+We get
+\begin{align*}
+&(E+\partial h/\partial y)\dot y=A(y+h(y)),\\
+&\dot y=(E+\partial h/\partial y)^{\text-1}A(y+h(y)).
+\end{align*}
+
+And so, $\dot y=\Lambda y+B(y)+C(y)+\dots$, where
+$C(y)=\Lambda h(y)-\frac{\partial h}{\partial y}\Lambda y$ (the ellipsis
+indicates terms of degree greater than one over $B$ and $h$).
+
+In this manner, \textit{the influence of the deformation of the system of
+coordinates converges with the first approximation to the change of the right
+part of the equation by the value of the Poisson bracket of the linear part of
+the initial field and the field of the deformation}.
+
+Let us examine the terms of the second degree in the Taylor series of the right
+side
+$$B(x)=B_2(x)+\dots$$
+We will seek terms of second degree in the Taylor series in the replacement of
+coordinates
+$$h(y)=h_2(y)+\dots$$
+so that in the new system of coordinates we can eliminate the terms of second
+degree of $y$.
+We get an equation for $h_2$
+$$\Lambda h_2(y)-\frac{\partial h_2}{\partial y}\Lambda y=\text-B_2(y).$$
+Let $h_2^{k,m}$ represent (along with $B_2^{k,m}$) the coefficient of the
+expansion of the $k^\text{th}$ component of $h$ (along with $B$) where
+$y^m=y_1^{m_1}\dots y_n^{m_n}$.
+The solution of the equation for $h_2$ is given by
+$$h_2^{k,m}=\text-\frac{B_2^{k,m}}{\lambda_k-(m,\lambda)}.$$
+
+The approach of one of the $\lambda_k-(m,\lambda)$ denominators to zero is
+called a \textit{resonance}.
+The number $|m|=m_1+\dots+m_n$ is called the \textit{degree of the resonance}.
+
+If a system does not have second degree resonances then the terms of second
+degree can be eliminated with a convenient replacement of coordinates.
+
+Let us examine the resulting system with the right side of
+$\Lambda y+B_3(y)+\dots$ and let us make the replacement $y=z+h_3(z)$.
+If there are no third degree resonances we can exclude all third degree terms.
+
+Continuing in this manner, \textit{we can exclude all non-linear terms in the
+Taylor series on the right side if the system is devoid of resonances of all
+degrees.}
+In the new system of coordinates the equation converges to the simplest linear
+$\dot w=\Lambda w$.
+
+It should be remarked upon that the converging procedure described above does
+not always terminate with a converging series.
+
+In applications of bifurcation theory, a primary role is played by several first
+approximations of the method, and the question of convergence does not play a
+large part.
+
+If a system has resonances, then several of the non-linear terms are impossible
+to kill with replacement of variables, or more specifically, in the presence of
+the resonance $\lambda_k=(m,\lambda)$ it is impossible to kill $x^m$ in the
+$k^\text{th}$ component of the field.
+These terms are called \textit{resonant}.
+
+In this case Poincar\'e's method allows us to eliminate all non-linear terms in
+the Taylor series on the right side of the equation, except the resonant ones.
+
+Let us remark that the resonance is one of the types of degenerations, thus, it
+must not be present in systems in general position and must be studied not for
+an individual system but for a family of systems depending on the parameters.
+
+In a general family of systems depending on the parameters, resonances will be
+observed for separate values of the parameter.
+In this case, for values of the parameter close to the resonance ones,
+Poincar\'e's method allows us to exclude all non-linear terms.
+
+However, the resulting replacements will discontinuously depend on the
+parameter, since in the formulas near a resonance value of the parameter there
+appears a pole.
+Thus while studying the passing through the resonance we should preserve the
+resonant terms not only near the resonant value of the parameter (when it is
+impossible to eliminate them), but also near nearby non-resonant values of the
+parameter.
+In this case the replacement of variables can be made smoothly dependent on the
+parameter at the moment of passing through the resonance as well.\\
+
+\centerline{\textbf{4. Normal forms near periodic motion}}
+\vspace{1em}
+Poincar\'e's method, described above for the case of point of equilibrium, can
+be reapplied for periodic motion.
+There are two functionally equivalent methods to perform this reapplication.
+
+One of these methods consists in examining the function of the Poincar\'e
+sequence, i.e. the mapping of the platform, transversally to the cycle in
+question, into itself, given by the phase curves of the system in question.
+Let us choose a coordinate system on the transversal platform so that the origin
+will be in the point of the cycle.
+
+The function of the sequence can be written as
+$$x\to\Lambda x+\dots,\quad x=(x_1,\dots,x_n),$$
+where $\Lambda$ is the linear operator, and the ellipsis indicates non-linear
+terms.
+The eigenvalues of the operator $\Lambda$ are called the \textit{multiplicators}
+of the periodic motion in question.
+
+With the replacement of coordinates
+$$x=y+(\text{non-linear terms})$$
+we can eliminate the non-linear terms of the function of the sequence.
+The resonances in this case will be the relations $\lambda_k=\lambda^m$, where
+$\lambda^m=\lambda_1^{m_1}\dots\lambda_n^{m_n}$.
+
+If there are no resonances then in the Taylor series of the function of the
+sequence we can eliminate all non-linear terms.
+If there are resonances then we should leave the resonant terms ($y^m$ in the
+$k^\text{th}$ component).
+When studying families near resonances we should preserve the resonant terms.
+
+The second approach to the problem about periodic motion consists in that phase
+curves near the cycle in question are defined with the help of an equation with
+periodic coefficients in which the number of phase coordinates if one less than
+the initial one, and the role of time is played by the phase of movement along
+our cycle.
+
+In this case, Poincar\'e's method results in periodic over time replacements of
+variables.
+In the non-resonant case these replacements manage to kill all non-linear over
+new phase coordinate terms in the expansion of the right side of the Taylor
+series over the degrees of the components of the deviation from the cycle in
+question (the coefficients of these series are the Fourier series over time).
+
+In the resonant case there are resonant terms.
+Suppose that our equation has the form
+$$\dot x=\Lambda x+\dots,\quad x=(x_1,\dots,x_n),$$
+where the non-linear terms have a period of $2\pi$ over $t$.
+Then the condition of resonance has the form $\lambda_k=\lambda^m+im_0$,
+the corresponding resonant term contains $x^me^{im_0t}$ in its $k^\text{th}$
+component.
+
+Upon studying families we should preserve the summand in normal form not only at
+the moment of resonance, but also near it.\\
+
+\centerline{\textbf{5. Preliminary analysis of the problem of loss of stability
+in periodic motion}}
+\vspace{1em}
+Let us apply the above to the problem of loss of stability.
+Let us examine the functional space of systems with stable periodic movement.
+The boundary of the region of the system with stable periodic movement
+represents the hypersurface with three components, each of which has codimension
+1 in functional space.
+
+In fact, on the boundary lie systems that have a multiplicator exactly equal to 1.
+But the characteristic equation is real, so exactly one multiplicator can be on
+the unit circle if it is equal to 1 or -1.
+If the multiplicator is not 1 or -1, then there must be at least two complex
+conjugate multiplicators on the circle.
+
+It is easy to figure out that in each of the three cases (the multiplicator is
+1, -1, or a complex pair) there is a corresponding hypersurface in functional
+space, i.e. it is given by one condition on the system.
+For systems on the boundary of the region of stability, all other multiplicators
+lie strictly inside the unit circle.
+In relation with section 1, each of the three cases can be encountered in an
+irremovable case in one-parametric families in general position, and we must
+study the bifurcations of the parameter passing through the critical value.
+
+In the case where one of the multiplicators is equal to 1, the corresponding
+bifurcation is a merger of a stable cycle with an unstable one, after the
+critical value both cycles disappear; the loss of the stability meanwhile, is
+rough.
+
+When one of the multiplicators is equal to -1, the cycle losing stability does
+not disappear.
+At a critical value of the parameter, the cycle losing stability is approached
+by the passing around it double stable cycle.
+This double cycle either is born when passing through the critical value (in
+this case the loss of stability is smooth) or dies (in this case the radius of
+attraction of the stable cycle becomes small even before the rough loss of
+stability).
+
+All of these results easily follow from study from the presented above
+Poincar\'e's theorem.
+In fact, the function of the sequence with preservation of first resonant terms
+has the form
+\begin{align*}
+&x\to(1+\epsilon)x+Cx^2+\dots\quad(\lambda=+1),\\
+&x\to(\text-1+\epsilon)x+Cx^3\quad(\lambda=\text-1).
+\end{align*}
+Here $x$ represents the coordinate in the eigendirections, corresponding to the
+eigenvalue $\lambda$ with a modulus equal to 1.
+We represented with $\epsilon$ the parameter of deformation; the coefficient
+$C$, generally speaking, depends on $\epsilon$.
+The sign of $C(0)$ regulates the birth and death of cycles.
+In the directions of the remaining eigenvalues there is a compression so that
+they will not influence the bifurcation (see Shoshitajshvili's general theory
+[1]).
+
+Let us now address the third case of loss of stability, when a pair of
+multiplicators exit onto the unit circle.
+
+The corresponding hypersurface in functional space intersects the previous
+hypersurfaces (corresponding to the cases $\lambda=1$ and $\lambda=\text-1$)
+over surfaces with codimension two.
+The common points on these surfaces correspond to the systems with a double
+eigenvalue $\lambda=1$ ($\lambda=\text-1$) and with a Jordanian grid of order 2.
+These two cases are realized as irremovable with the availability of two
+parameters and must be examined separately.
+
+For the remaining cases of an exit of a pair of eigenvalues of the linearization
+of the function of the sequence on the unit circle, let us apply Poincar\'e's
+method.
+Let us assume for simplicity that there are only two eigenvalues, i.e. that the
+initial phase space, where lies the cycle in question, is three-dimensional.
+
+The conclusions, to which the calculations lead to using this method consist of
+the following.
+\begin{enumerate}
+\item The function of the sequence is reduced to normal form which is a
+conversion in unit time in the phase flow of the vector field on the surface (at
+least on the level of the Taylor expansion of finite degree).
+\item The resulting vector field on the plane is invariant relative to the group
+of all rotations of the plane in the non-resonant case and relative to the
+finite group of rotation by angles that are multiples of $2\pi/q$ in the case of
+a resonance of order $q$.
+\item The first two conclusions remain relevant in the case when the system is
+dependent on a parameter.
+A replacement reducing a finite segment of the Taylor series to normal form
+smoothly depends on the parameter with and without resonances, if we preserve
+the resonant terms with an exact resonance or with near values of the parameter.
+Then the symmetry if the normal form relative to rotation by angles that are
+multiples of $2\pi/q$, has a place not just with an exact resonance but also
+with near values of the parameter.
+\item The equation in normal form near a resonance of order $q>2$ has the form
+$$\dot z=\epsilon z+A(|z|^2)z+B\overline z^{q-1},$$
+if we ignore the terms of degree $q+1$ and higher over $|z|$.
+\end{enumerate}
+
+The same conclusions result from the application of averaging methods; however
+the normal form is interpreted as the averaged system, describing a slow
+evolution of phase curves near the closed one.
+
+Upon use of all of these results we should keep in mind that the exact function
+of the sequence is not, generally speaking, a conversion of a phase flow of some
+vector field on a plane and does not transition to itself upon action of any
+finite group of symmetries.
+The execution of these properties for normal form is one of the indications that
+series reducing to normal form diverge in the general case.
+
+Nevertheless, many conclusions that can be made from the qualitative picture on
+the phase plane of normal form allow us to make conclusions about the behaviour
+of the phase curves of the initial system.
+For example, the points of equilibrium of the reduced system (shortened normal
+form or averaged system) are controlled by closed phase curves of the initial
+system, cycles of the reduced system are controlled by invariant tori in the
+initial etc.
+At the same time finer effects (like the splitting of separators and appearance
+of homoclinical and heteroclinical movements) do not appear in the reduced
+system.
+
+In the case where the dimension of the initial phase space is greater than
+three, while studying loss of stability with the exit of two eigenvalues onto
+the circle we can limit ourselves to the study of the three-dimensional
+submapping in phase space on which occur the phenomena described above.
+Over the other eigendirections the function of the sequence is a contraction
+mapping.
+
+The foundation of the possibility to discard these eigendirections as irrelevant
+can be achieved with a referral to the aforementioned Shoshitajshvili's general
+theory.\\
+
+\centerline{\textbf{6. Study of normal forms}}
+\vspace{1em}
+From what the above we can see in what way and in what sense the study of loss
+of stability near resonances leads to the study of bifurcations of phase
+portraits in two-parametric systems of vector fields on a plane, invariant
+relative to rotations by angles of $2\pi/q$ where $q$ is the order of the
+resonance.
+Although the study should produce in the small region of the origin, not
+depending on the parameters.
+
+The size of the region in which the system is being studied is the primary
+difference between bifurcation theory and local qualitative theory.
+Indeed, just like for an individual system as for the availability of parameters
+in the neighbourhood of the point of equilibrium, the system can be studied with
+methods of local qualitative theory.
+We learn that, for example, for which value of the parameter does the
+equilibrium lose stability, and get a phase portrait in a certain region of the
+point of equilibrium for each value of the parameter whether it is bifurcational
+or not.
+
+Additionally, the size of the indicated neighbourhood approaches zero as the
+parameter approaches a bifurcational value, even though it is distinct from zero
+at the moment of bifurcation.
+
+With this approach the most important phenomenon remains out of our field of
+view: the branching of the new equilibrium or cycle at the moment of
+bifurcation.
+Indeed, at the most critical moment, there is no branching object yet, and at
+the next moment it is already out of the operational area of local theory.
+
+In this manner, for studying bifurcations it is essential to study the phase
+neighbourhood not approaching zero as the parameter approaches the critical
+value.
+In other words, we must examine the neighbourhood that is independent of the
+parameter in phase space, but the neighbourhood in the straight product of the
+phase space and parameter space.
+
+Phase pictures shown on the attached Fig.~1--5 can be observed near resonances
+that specifically were not dependent on the parameters of the neighbourhood of
+the origin.
+A convenient tool for formulation of answers is the language of so called versal
+deformations.
+
+A \textit{deformation} of a vector field refers to a family of fields depending
+on parameters, that transform into the given field when the parameters have a
+zero value.
+Two deformations are called \textit{equivalent} if there exists a homeomorphic
+(continuous and bijective) replacement of parameters and a continuously
+depending on parameters family of homeomorphisms of phase space,
+translating parameters and the family of phase portraits of the first
+deformation into parameters and corresponding phase portraits of the second.
+
+If we fix a deformation with a certain parameter space then any mapping of
+another parameter space into it induces a new deformation.
+
+A deformation of a vector field is called \textit{monologically versal} if any
+other deformation of the same field is equivalent the induced one out of the
+given one.
+In this manner, a versal deformation is in some sense the largest deformation,
+containing in itself all others.
+
+A versal deformation with a finite number of parameters exists not for any
+field, but if it exists, were to be found and studied, then it would give rather
+complete information about all phenomena and reassemblies occurring for any
+deformations of the given field.
+
+Versal deformations are determined by an analogous method for other objects,
+for example for vector fields with determined conditions of symmetry (meaning
+that deformations and phase homeomorphisms alike, in the definition of
+equivalence are symmetric).
+
+As explained above, the problem about loss of stability near resonances of order
+$q$ requires study of deformations of vector fields on a plane, invariant
+relative to rotations by angles of $2\pi/q$.
+
+\textbf{Theorem.}\quad\textit{Vector fields on a plane, invariant relative to
+rotations by angles of $2\pi/q,\quad q\neq2,4$, containing a point of
+equilibrium at zero with a zero linear part and non-linear terms in general
+form, allow a two-parametric versal deformation in the class of symmetric
+fields; the corresponding system of differential equations can be written in the
+form
+$$\dot z=\epsilon z+Az|z|^2+\overline z^{q-1}$$
+($\epsilon$ is the complex parameter).}
+
+In the case where $q=4$ theorem is, seemingly, also true, but has not been
+proven.
+The cases of strong resonances of order $q=1$ and 2 are studied separately and
+lead to the formulas indicated above (see section 2).
+
+The proofs of the formulated results are not simple: there are difficulties
+involved with the study of edge cycles.
+In the simplest case of $q=1$ these difficulties were overcome by Bogdanov in
+the years 1970--1971 [2].
+In the year 1974 Takens' preprint appeared in which the hypotheses about types
+of reassemblies were announced.
+
+The results of study of resonances of order 3 were also published by Gavrilov
+[3].
+From these works it is unclear, however, how to overcome the difficulties
+associated with the study of a reduced system.
+Full proofs of all cases where $q\neq4$ and for part of the cases where $q=4$
+were given by Horozov (years 1976--1977).
+Proofs were based on non-trivial concepts in algebraic geometry and Riemann
+surface theory, developed by Ilyashenko [4].
+
+A more detailed statement of the question of versal deformations can be found in
+the overview paper cited above of author [2] in [5] and in the book currently
+being prepared for printing, ``Additional chapters on the theory of ordinary
+differential equations''.\\
+
+\centerline{LITERATURE}
+\vspace{1em}
+\begin{enumerate}
+\item\textit{Shoshitajshvili A.N.}--Works of a seminar for I.G. Petrovskii, v.
+1. M., MSU, 1974.
+\item\textit{Arnold V.I.}--Successes in Mathematical Studies, 1972, 27,
+\textnumero~5, p. 119.
+\item\textit{Gavrilov N.K.}--From book: Study on stability and oscillation 
+theory. Yaroslavl, YSU, 1977.
+\item\textit{Ilyashenko Y.S.}--Functional analysis and its applications, 1977,
+11, \textnumero~2, p. 28.
+\item\textit{Arnold V.I.}--Functional analysis and its applications, 1977, 11,
+\textnumero~2, p. 1.
+\end{enumerate}
 \end{document}
