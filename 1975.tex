@@ -10,90 +10,84 @@
 \usepackage{gensymb}
 \usepackage{color}
 \usepackage{textcomp}
-\usepackage{tikz}
-\usetikzlibrary{arrows}
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1
 .tif`.png}
 \newcommand{\st}{$^\text{st}$~}
 \newcommand{\nd}{$^\text{nd}$~}
 \newcommand{\rd}{$^\text{rd}$~}
 \renewcommand{\th}{$^\text{th}$~}
-\title{On the First Union-wide Mathematical Student Olympiad}
+\title{On the First All-Union Mathematical Student Olympiad}
 %\date{}                                           % Activate to display a given date or no date
 %\author{V.I.~Arnold, ~~~~ A.P.~Shapiro}
-\author{V.I. Arnold, A.A. Kirillov, V.M. Tihomirov, M.A. Shubin}
+\author{V.I. Arnold, A.A. Kirillov, V.M. Tikhomirov, M.A. Shubin}
 \begin{document}
 \maketitle
-On the 23\rd and the 24\th of October, 1974, the third and
-final round of the Union-wide olympiad ``The Student and techinco-scientific
-progress''.
-This was the first Union-wide student olympiad; it was on several different
-topics, among them, mathematics.
+On October 23--24, 1974, the third and final round of the All-Union olympiad
+``The Student and progress of science and technology''.
+This was the first All-Union student olympiad; it was on several different
+disciplines, among them, mathematics.
 
 The third round of the subject olympiad in mathematics was held at the
-mechanico-mathematical department at MSU.
-To hold the competition, a jury was created from the faculty of the department
-led by P.S. Alexandrov.
-Many professors and graduate students helped with the creation of the problems
-and the grading of the solutions.
-The final selection of problems was done by th authors of this article.
+Mechanico-Mathematical Department at MSU.
+To hold the competition, a jury chaired by P.S. Alexandrov was created from the
+faculty of the Department.
+Many professors and graduate students proposed problems and graded the
+solutions.
+The final selection of problems was done by the authors of this article.
 
 There were 18 teams at the olympiad; there were two teams from the RSFSR, one
 team from each of the other republics, and one team from each of Moscow and
 Leningrad.
 In total, 89 students participated in the olympiad.
-Let us note that all the given problems were solved by the olympiad's
+Note that all of the proposed problems were solved by the olympiad's
 participants.
-Let us present a list of the participants who finished in the top ten:
+Here is a list of the top 10 participants:
 \begin{enumerate}
 \item
-S.V. Konjagin (Moscow, MSU, mech.-math., 2\nd year),
+S.V. Konjagin (Moscow, MSU, Mech.-Math., 2\nd year),
 \item
-A.B. Alexandrov (Leningrad, LSU, math.-mech., 4\th year),
+A.B. Alexandrov (Leningrad, LSU, Math.-Mech., 4\th year),
 \item
-V.V. Sologubov (RSFSR-2, MIPT, 2\nd year),
+V.V. Sologubov (RSFSR-2, MPTI, 2\nd year),
 \item
-A.N. Drobotenko (Moldavia, Kishinev Polytech. Inst., 3\rd year),
+A.N. Drobotenko (Moldova, Kishinev Polytech. Inst., 3\rd year),
 \item
-S.E. Belkin (Moscow, MSU, mech.-math., 3\rd year),
+S.E. Belkin (Moscow, MSU, Mech.-Math., 3\rd year),
 \item
-E.M. Matveev (Moscow, MSU, mech.-math., 3\rd year),
+E.M. Matveev (Moscow, MSU, Mech.-Math., 3\rd year),
 \item
-A.L. Figotin (Ukraine, Kharkiv Inst., mech.-math., 4\th year),
+A.L. Figotin (Ukraine, Kharkiv Inst., Mech.-Math., 4\th year),
 \item
-E.V. Callinen (Leningrad, LSU, 4\th year),
+E.V. Sallinen (Leningrad, LSU, 4\th year),
 \item
-N.V. Kartashev (Ukraine, Kiev Inst., mech.-math., 4\th year),
+N.V. Kartashev (Ukraine, Kiev Inst., Mech.-Math., 4\th year),
 \item
-A.M. Steinberg (RSFSR-1, Ural Inst. mech.-math., 4\th year).
+A.M. Steinberg (RSFSR-1, Ural Inst. Mech.-Math., 4\th year).
 \end{enumerate}
 
-The teams stacked up with Moscow and Leningrad sharing first and second place,
-with Ukraine coming in third.
+In the team standing, Moscow and Leningrad shared first and second place, with
+Ukraine coming in third.
 
-Below are presented the problems that made up the third round of the Union-wide
-mathematical olympiad and their solutions.
+Below we present the problems of the third round of the All-Union mathematical
+olympiad, as well as their solutions.
 In total there were 11 problems: five on the first day and six on the second.\\
-\hspace{0ex}\\
 
-\centerline{\textbf{1\st day}}
+\centerline{\textbf{Day 1}}
 
-\begin{enumerate}
-\item
-\textit{Prove the the functions $f_1,\dots,f_n$ are linearly independent if and
-only if there exists a set of points $t_1,\dots,t_n$, such that
-$\det||f_i(t_j)||_{i,j=1}^n\neq0$.}
+\textbf{1.}\quad\textit{Prove that functions $f_1,\dots,f_n$ are linearly
+independent if and only if there exists a set of points $t_1,\dots,t_n$, such
+that $\det||f_i(t_j)||_{i,j=1}^n\neq0$.}
 
 \textit{Solution.}
 If $\det||f_i(t_j)||_{i,j=1}^n\neq0$, then it is clear that $f_i(t)$ are
 linearly independent.
 Let us prove the converse by induction.
-For $n=1$ everything is clear.
-Suppose that the statement is true for $n=k$.
-Let us prove the statement for $n=k+1$.
+For $n=1$ it is evident.
+Suppose that the statement is true for $n=k$ and prove the statement for
+$n=k+1$.
 Let us find $k$ points $t_1,\dots,t_k$ such that
 $\det||f_i(t_j)||_{i,j=1}^k\neq0$.
-Suppose that there is no $k+1$\th point with the needed property.
+Suppose that there is no $k+1$\th point with the required property.
 This means that
 $$\det
 \begin{array}{||ccc||}
@@ -109,166 +103,162 @@ $$f_1(t)C_1+\dots+f_{k+1}(t)C_{k+1}\equiv0,$$
 where
 $$C_{k+1}=\det||f_i(t_j)||_{i,j=1}^k\neq0,$$
 by inductive hypothesis.
-We have arrived at a contradiction with the problem statement.
+We have arrived at a contradiction with the problem's assumption of linear
+independence.
 Thus, the problem statement is true for $n=k+1$.
 
 This problem was fully solved by 25 people.
 12 people did not attempt it.
-The rest gave incomplete or incorrect solutions.
-\item
-\textit{The function f(t) is defined over $[0,+\infty)$ and has a continuous
-derivative.
-\begin{enumerate}
-\item
-It is known that $f(t)+f'(t)\to A$ as $t\to+\infty$.
-Prove that $f(t)\to A$ as $t\to+\infty$.
-\item
-It is known that $f(t)-f'(t)\to A$ as $t\to+\infty$.
-Is it true that $f(t)\to A$ as $t\to+\infty$?
-\end{enumerate}}
+The rest gave incomplete or incorrect solutions.\\
+
+\textbf{2.}\quad\textit{The function f(t) is defined over $[0,+\infty)$ and has a
+continuous derivative.\\\indent
+a) It is known that $f(t)+f'(t)\to A$ as $t\to+\infty$.
+Prove that $f(t)\to A$ as $t\to+\infty$.\\\indent
+b) It is known that $f(t)-f'(t)\to A$ as $t\to+\infty$.
+Is it true that $f(t)\to A$ as $t\to+\infty$?}
 
 \textit{Solution.}
-\begin{enumerate}
-\item
-Subtracting a constant, we can simplify the problem to $A=0$.
+a) Subtracting a constant, we can simplify the problem to $A=0$.
 Suppose that $f(t)+f'(t)=g(t)$.
 Then
-$$\hspace{10ex}f(t)=Ce^{\text-t}+e^{\text-t}\int\limits_0^te^\tau g(\tau)
-\text d\tau=Ce^{\text-t}+e^{\text-t}\left[\int\limits_0^Te^\tau g(\tau)
+$$\hspace{10ex}f(t)=Ce^{-t}+e^{-t}\int\limits_0^te^\tau g(\tau)
+\text d\tau=Ce^{-t}+e^{-t}\left[\int\limits_0^Te^\tau g(\tau)
 \text d\tau+\int\limits_0^te^\tau g(\tau)\text d\tau\right].$$
 
 \quad Thus
-$$|f(t)|\leq|C|e^{\text-t}+e^{\text-t+T}\max\limits_{t\geq0}|g(t)+
+$$|f(t)|\leq|C|e^{-t}+e^{-t+T}\max\limits_{t\geq0}|g(t)+
 \max\limits_{t\geq T}|g(t)|,$$
 from which the problem statement (a) follows.
-\item
-It is not true that $f(t)\to A$.
+
+b) It is not true that $f(t)\to A$.
 Indeed, if $f(t)=e^t$, then $f(t)-f'(t)=0$, but $e^t$ does not approach 0 as
 $t\to+\infty$.
-\end{enumerate}
 
 This problem was fully solved by 19 people.
-45 managed to solve part (b).
-11 people did not attempt the problem.
-\item
-\textit{The function $f(x)$ is defined over $[0,+\infty)$ and has a continuous
-derivative, where
+45 people managed to solve part (b), while 11 people did not attempt the
+problem.\\
+
+\textbf{3.}\quad\textit{The function $f(x)$ is defined over $[0,+\infty)$,
+has a continuous derivative, and satisfies
 $\displaystyle\int\limits_0^{+\infty}|f'(x)|\text{\normalfont d}x<+\infty$.
 Prove that the series $\displaystyle\sum\limits_{n=0}^\infty f(n)$ converges if
 and only if the integral
 $\displaystyle\int\limits_0^\infty f(x)\text{\normalfont d}x$ converges.}
 
 \textit{Solution.}
-From the Newton-Liebnitz formula and the theorem about average values follows
-that when $0\leq\theta\leq1$
+The Newton-Liebnitz formula and the mean-value theorem imply
+that for $0\leq\theta\leq1$, one has
 $$\left|\int\limits_n^{n+\theta}f(x)\text dx-\theta f(n)\right|
-\leq\theta\int\limits_n^{n+1}|f'(x)|\text dx$$
+\leq\theta\int\limits_n^{n+1}|f'(x)|\text dx.$$
 
-So when $0<u<v$
+Therefore for $0<u<v$,
 $$\hspace{10ex}\left|\int\limits_u^vf(x)\text dx-\sum\limits_{n=[u]+1}^{[v]-1}
 f(n)-\theta_1f([u])-\theta_2f([v])\right|\leq\hspace{30ex}$$
 $$\hspace{30ex}\leq\int\limits_{[u]}^{[v]+1}|f'(x)|\text dx,\quad0\leq\theta_j
 \leq1\quad(j=1,2).$$
-The statement we are looking for follows from here with the application of
-Cauchy's criterion.
+Whence the required statement is obtained by applying the Cauchy criterion.
 
 This problem was solved by 14 participants.
-31 participants did not even attempt the problem.
-\item
-\textit{Evaluate $\displaystyle\int\limits_1^{10}x^x\text dx$ with a relative
-error of no more than 1\% }(\textit{it is necessary to give the answer, not to
-prove the accuracy of the answer; $\ln10\approx2.3026$}).
+31 participants did not even attempt the problem.\\
+
+\textbf{4.}\quad\textit{Evaluate $\displaystyle\int\limits_1^{10}x^x\text dx$
+with a relative error of no more than 1\% }(\textit{it is necessary to give the
+answer, not to prove the accuracy of the answer; $\ln10\approx2.3026$}).
 
 \textit{Answer.}
 $\displaystyle\int\limits_1^{10}x^x\text dx\approx\frac{10^{10}}{1+\ln10}\approx
 0.30\cdot10^{10}.$
 
-Reasoning,
+Here is the reasoning:
 $$\int\limits_1^{10}x^x\text dx=\int\limits_1^8x^x\text dx+\int\limits_8^{10}x^x
 \text dx=A+B;\quad A<\int\limits_1^88^x\text dx<\frac{8^8}{\ln8}<10^7;$$
 $$B=\int\limits_8^{10}x^x\text dx=\int\limits_8^{10}\frac{\text d(e^{x\ln x})}
 {1+\ln x}=\frac{x^x}{1+\ln x}\bigg\rvert_8^{10}+\int\limits_8^{10}
 \frac{x^x\text dx}{(1+\ln x)^2x}\approx\hspace{10ex}$$
-$$\hspace{10ex}\approx\frac{10^10}{1+\ln10}+\frac{x^x}{(1+\ln x)^3x}
+$$\hspace{10ex}\approx\frac{10^{10}}{1+\ln10}+\frac{x^x}{(1+\ln x)^3x}
 \bigg\rvert_8^{10}\approx\frac{10^{10}}{1+\ln10}\approx0.30\cdot10^{10}$$
-(the computation ignores values that give an error of under 1\%).
+(the computation above ignores values giving an error of under 1\%).
 
 Only two participants solved this problem: A.B. Alexandrov (Leningrad) and P.E.
 Normak (Estonia).
-50 people did not attempt to solve this problem.
-\item
-\textit{Let coordinate axes be chosen in three-dimensional space and let $V_1$
-be a convex polyhedron, all of whose vertices lie on lattice points.
-Let $V_k$ denote the polyhedron, whose set of radial vectors is the result of
-multiplying the set of radial vectors of $V_1$ by $k$.
-Let $N(V)$ denote the set of lattice points that lie inside of polyhedron $V$ or
-on its surface and let $\mu(V)$ denote the volume of polyhedron $V$.
+50 people did not attempt to solve this problem.\\
+
+\textbf{5.}\quad\textit{Let coordinate axes be chosen in the three-dimensional
+space and let $V_1$ be a convex polyhedron, all of whose vertices lie on the
+integer lattice points.
+Let $V_k$ denote the polyhedron, whose radius vectors are obtained from $V_1$ by
+multiplying all of the radius vectors of all of the vertices of $V_1$ by $k$.
+Let $N(V)$ denote the set of integer lattice points that lie inside of polyhedron
+$V$ or on its surface and let $\mu(V)$ denote the volume of polyhedron $V$.
 Prove that}
 \begin{equation}
 N(V_3)-3N(V_2)+3N(V_1)-1=6\mu(V_1).
 \end{equation}
 
-The solution will be carried out by inducting over the dimension.
-On a line the following formula is true
+The solution will be carried out by induction over the dimension.
+On a line the following formula is true:
 \begin{equation}
 N(V_1)-1=l(V_1),
 \end{equation}
-where $l(V_1)$ is the length of the line segment $V_1$, whose endpoints lie on
-lattice points.
-Let us show that on a plane for a convex polygon $V_1$ with vertices on lattice
-points, the following formula is relevant
+where $l(V_1)$ is the length of the line segment $V_1$, whose endpoints have
+integer coordinates.
+Let us show that on a plane for a convex polygon $V_1$ with vertices in the
+integer points, the following formula holds:
 \begin{equation}
 N(V_2)-2N(V_1)+1=2S(V_1),
 \end{equation}
 where $S(V_1)$ is the area of $V_1$.
-From equation (2) it follows that (3) is true for degenerate two-dimensional
-polygons--line segments.
-From here it immediately follows that if polygon $V_1$ were broken diagonally
+From equation (2) it follows that (3) holds for degenerate two-dimensional
+polygons, namely, line segments.
+From here it is immediate that if polygon $V_1$ were cut by a diagonal
 into two pieces $V_1'$ and $V_1''$, then
 $$N(V_2)-2N(V_1)+1=[N(V_2')-2N(V_1')+1]+[N(V_2'')-2N(V_1'')+1].$$
-Everything follows to the proof of (3) for triangles.
+Thus one only needs to prove (3) for triangles.\\
 
-Let us put the origin $O$ at a vertex of the lattice triangle $V_1$ (Fig.~1) and
+[Figure 1]\\
+
+Let us put the origin $O$ at a vertex of the integer triangle $V_1$ (Fig.~1) and
 let $A$ and $B$ be the triangle's two other vertices.
-Let $OA'B'$ be triangle $V_2$.
-From Fig.~1 it is clear that the left side of equation (3) is equal to $N(\Pi)$,
-the number of lattice points in the shape $\Pi$, represented by the
+Let $OA'B'$ be the triangle $V_2$.
+From Fig.~1 it is clear that the left hand side of equation (3) is equal to
+$N(\Pi)$, the number of integer points in the shape $\Pi$, which is the
 parallelogram $OACB$ without sides $AC$ and $BC$.
 If $S(\Pi)$ is the area of parallelogram $OACB$ (equal to $2S(V_1)$) then to
-prove (3) all that's left to check is that $N(\Pi)=S(\Pi)$.
-Let us note that translating by $\Pi$ to various lattice points we can
-tessellate the entire plane (without intersections).
-Additionally a square with a side length of $M$ is intersected by
+prove (3) it remains to verify that $N(\Pi)=S(\Pi)$.
+Note that shifting $\Pi$ to integer points we can tessellate the entire plane
+(without intersections).
+Moreover, a square with a side of length $M$ intersects with
 $\displaystyle\frac{M^2}{S(\Pi)}+O(M)$ $\Pi$-parallelograms.
-The number of lattice points in these parallelograms is equal to
+The number of integer points in these parallelograms is equal to
 $\displaystyle N(\Pi)\frac{M}{S(\Pi)}+O(M)$.
-However the number of lattice points in the square of interest is equal to
-$M^2+O(M)$.
-Thus, $N(\Pi)=S(\Pi)$, which proves equation (3).
+However the number of integer points in the square under consideration is equal
+to $M^2+O(M)$.
+Thus, $N(\Pi)=S(\Pi)$, which proves formula (3).\\
 
-We now move to the three-dimensional case.
-From (3) it follows that it is sufficient to prove equation (1) for tetrahedra
+[Figure 2]\\
+
+Now consider the three-dimensional case.
+From (3) it follows that it is sufficient to prove equation (1) for tetrahedra,
 where the proof is analogous to the two-dimensional case but is based on a more
 complicated drawing (Fig.~2).
-From the polyhedron $V_3=OA'B'C'$ we throw out three polyhedra of type $V_2$,
-located ``in the corners'' $A'$, $B'$, $C'$, we add their pairwise intersections
-(of type $V_1$) and we throw away one extra point $P$.
-The remainder is a parallelepiped $\Pi$ with a volume of $6\mu(V_1)$ without
+From the polyhedron $V_3=OA'B'C'$ we exclude three polyhedra of type $V_2$,
+located ``at the corners'' $A'$, $B'$, $C'$, but we add their pairwise
+intersections (of type $V_1$) and exclude one extra point $P$.
+The remainder is a parallelepiped $\Pi$ with a volume of $6\mu(V_1)$ without a
 part of the surface.
-These parallelepipeds can be used to tessellate all space without intersections.
+These parallelepipeds can tessellate all space without intersections.
 Thus $N(\Pi)=\mu(\Pi)$, which proves the desired statement.
 
-This problem was only solved by E.P. Turkevich (Ukraine).
+This problem was solved only by E.P. Turkevich (Ukraine).
 Several participants were on the right track.
 67 people did not attempt it.\\
-\end{enumerate}
 
-\centerline{\textbf{2\nd day}}
+\centerline{\textbf{Day 2}}
 
-\begin{enumerate}
-\item
-\textit{Let $f(x)$ be a continuous function over $[0,1]$ and let $\phi(x)$ be a
-continuous periodic function over $(\text-\infty,+\infty)$ with a period of $T$.
+\textbf{1.}\quad\textit{Let $f(x)$ be a continuous function over $[0,1]$ and let
+$\phi(x)$ be a continuous periodic function over $(-\infty,+\infty)$ with a
+period $T$.
 Prove that}
 \begin{equation}
 \lim_{n\to+\infty}\int\limits_0^1f(x)\phi(nx)\text dx=
@@ -276,9 +266,9 @@ Prove that}
 \end{equation}
 
 \textit{Solution.}
-Let $\chi_{[\alpha,\beta]}(x)$ be a function equal to 1 when
-$x\in[\alpha,\beta]$ and 0 when $x\notin[\alpha,\beta]$.
-Let's prove equation (4) for $f(x)=\chi_{[\alpha,\beta]}(x)$, where
+Let $\chi_{[\alpha,\beta]}(x)$ be a function equal to 1 for
+$x\in[\alpha,\beta]$ and 0 for $x\notin[\alpha,\beta]$.
+Let us prove equation (4) for $f(x)=\chi_{[\alpha,\beta]}(x)$, where
 $[\alpha,\beta]\subset[0,1]$.
 We get
 $$\int\limits_0^1\chi_{[\alpha,\beta]}(x)\phi(nx)\text dx=
@@ -287,200 +277,202 @@ $$\int\limits_0^1\chi_{[\alpha,\beta]}(x)\phi(nx)\text dx=
 (\beta-\alpha)\frac1T\int\limits_0^T\phi(x)\text dx$$
 as $n\to+\infty$.
 
-To prove (4) in the general case we need to uniformly approximate $f(x)$ with
-constant piecewise functions.
+To prove (4) in the general case we need to uniformly approximate $f(x)$ by
+piecewise constant functions.
 
 This problem was solved by 17 people.
-25 people did not attempt it.
-\item
-\textit{What is the largest number of normals can one draw to an ellipse passing
-through a point outside of it?
-Describe and draw the set of points outside of the ellipse that the maximum
-number of normals pass through.}
+25 people did not attempt it.\\
+
+\textbf{2.}\quad\textit{What is the largest number of normals that one can draw
+to an ellipse from a point outside of it?
+Describe and draw the set of points outside of the ellipse with the maximum
+number of normals.}
 
 \textit{Solution.}
-Let us write down the equation for an ellipse using polar coordinates
+Write the equation for an ellipse in polar coordinates
 $x=a\cos t$, $y=b\sin t$.
-A normal passing through the point $(a\cos t,b\sin t)$ on an ellipse has the
+A normal passing through the point $(a\cos t,b\sin t)$ on the ellipse has the
 equation $ax\sin t-by\cos t=(a^2-b^2)\sin t\cdot\cos t$.
 
-The envelope of this family of normals is parametrically defined by attaching
-the relation acquired by differentiating the equation by $t$ to the equation:
+The envelope of this family of normals can be defined parametrically by
+combining this equation with the relation acquired by differentiating this
+equation in $t$:
 $$ax\cos t+by\sin t=(a^2-b^2)\cos 2t.$$
 
-Excluding the parameter $t$, we arrive at the equation for an astroid
+Excluding the parameter $t$, we arrive at the equation for an astroid:
 $$(ax)^{2/3}+(by)^{2/3}=(a^2-b^2)^{2/3}.$$
 
-Let us notice that the transition from one number of normals to another can only
+Note that the transition from one number of normals to another can only
 happen on this astroid.
-From here it is easy to verify that from any point that lies inside the astroid
-we can draw 4 normals to the ellipse, from a point outside of it or on the
-vertices of the astroid--2 normals, on the astroid (discounting the vertices)--3
-normals.
+From here it is easy to verify that one can draw 4 normals to the ellipse from
+any point that lies inside the astroid; there are 2 normals from any point
+outside of the astroid as well as from its vertices, while there are 3 normals
+on the astroid itself (except for the vertices).
 
-If $a^2>2b^2$, then the astroid goes outside the boundaries of the ellipse
+If $a^2>2b^2$, then the astroid goes outside of the boundaries of the ellipse
 (Fig.~3).
-In Fig.~3, the shaded area was required to be displayed by the problem.
+In Fig.~3, the shaded area gives the answer to the problem.\\
+
+[Figure 3]\\
 
 This problem was fully solved only by S.E. Belkin (Moscow).
-39 students did not attempt the problem.
-\item
-\textit{Given are two trigonometric polynomials, $p(t)$ and $q(t)$.
-Prove that there exists a polynomial $R(x,y)$ such that $R(p(t),q(t))\equiv0$.}
+39 students did not attempt the problem.\\
+
+\textbf{3.}\quad\textit{Given are two trigonometric polynomials $p(t)$ and
+$q(t)$, prove that there exists a polynomial $R(x,y)$ such that
+$R(p(t),q(t))\equiv0$.}
 
 \textit{Solution.}
-Let $p(t)$ and $q(t)$ be algebraic polynomials of $e^{it}$ and $e^{\text-it}$
-of a degree no larger than $m$.
-Let $R(x,y)$ be an algebraic two-variable polynomial of degree $N$.
+Let $p(t)$ and $q(t)$ be algebraic polynomials of $e^{it}$ and $e^{-it}$
+of a degree no greater than $m$.
+Let $R(x,y)$ be an algebraic polynomial of degree $N$ in two variables.
 
-Then $R(p(t),q(t))$ is an algebraic trigonometric polynomial of $e^{it}$ and
-$e^{\text-it}$ of a degree no larger than $mN$.
-If we were to take the polynomial $R(x,y)$ with undefined coefficients and set
-the coefficients of $e^{ikt}$ in the expression for $R(p(t),q(t))$ to zero, then
-we would get $2mN+1$ linear homogeneous equations relative to the
+Then $R(p(t),q(t))$ is a trigonometric polynomial, which is of $e^{it}$ and an
+algebraic polynomial $e^{-it}$ of a degree no greater than $mN$.
+If we were to take the polynomial $R(x,y)$ with undefined coefficients and in
+the expression for $R(p(t),q(t))$ set the coefficients of $e^{ikt}$ to zero,
+then we would get $2mN+1$ linear homogeneous equations on
 $\displaystyle\frac12(N+1)(N+2)$ coefficients of the polynomial $R$.
-It follows that for a big $N$ the number of unknowns will be outgrow the number
-of equations, from which follows the existence of the polynomial $R$ that we
-were looking for.
+It follows that for a large $N$ the number of unknowns will be outgrow the
+number of equations, from which the existence of a desired polynomial $R$
+follows.
 
 This problem was solved by 11 people.
-51 people did not attempt to solve it.
-\item
-\textit{We have a series of spheres whose radii converge to 0, but whose total
-volume is infinite.
-Prove that it is possible to fit a finite number of these spheres inside of a
-cube such that they would fill 99\% of its volume.}
+51 people did not attempt to solve it.\\
+
+\textbf{4.}\quad\textit{Consider a sequence of balls whose radii tend to 0, but
+whose total volume is infinite.
+Prove that it is possible to fit a finite number of these balls inside a cube so
+they would fill 99\% of the cube's volume.}
 
 \textit{Solution.}
 It is sufficient to prove the following statement: there exists a number
 $\alpha$, $0<\alpha<1$, such that for any ``vessel'' $G$ (a region with a
-piecewise-smooth boundary) it is possible to place a finite number of spheres
-from the given sequence into the vessel such that they will fill a volume no
+piecewise-smooth boundary) it is possible to insert a finite number of balls of
+the given sequence into the vessel so that they should fill a volume no
 less than $\alpha\mu(G)$, where $\mu(G)$ is the volume of vessel $G$.
 In fact, if this is true, then we can place spheres into the initial cube in
 such a way that there will remain an empty space of volume $(1-\alpha)\mu_0$
 ($\mu_0$ is the volume of the initial cube).
-Having examined the remaining unfilled space as a new vessel, let us once again
-fill an $\alpha$\th of it and so on.
-After $n$ steps, the unfilled volume will be $(1-\alpha)^n\quad\mu_0\to0$ as
+Regarding the remaining unfilled space as a new vessel, we once again
+fill an $\alpha$\th part of it and so on.
+After $n$ steps, the unfilled volume will be $(1-\alpha)^n\mu_0\to0$ as
 $n\to+\infty$.
 
-Next, considering that any vessel can be filled with cubes with an arbitrarily
-small error, we see that it is sufficient to learn how to fill an $\alpha$\th of
-any cube.
-Let us present one possible algorithm for such a filling.
-Suppose we want to full a cube with side length 2 with spheres.
-Let us take a cube with side length one with its centre in the centre of the
+Since any vessel can be filled with cubes with an arbitrarily small error, we
+see that it suffices to learn how to fill an $\alpha$\th part of any cube.
+Here is one of the possible algorithms for such a filling.
+Suppose we want to full a cube with a side of length 2 with spheres.
+Take a cube with side length 1 and whose centre in the centre of the
 initial cube.
-Let us sort the spheres in decreasing order by radius and let their radii be
+Sort the balls in the order of decreasing radius and let their radii be
 $r_1\geq r_2\geq\dots$.
-Let us choose a number $N$ such that $r_N<1/2$ and start to place the
-consecutive spheres $N,N+1,\dots$, positioning their centres inside of the unit
+Choose a number $N$ such that $r_N<1/2$ and start to place the
+consecutive balls $N,N+1,\dots$ by positioning their centres inside of the unit
 cube.
 The process will inevitably terminate on some $M$\th step as the total volume of
-all of the spheres is infinite.
-Suppose that we managed to fit the spheres of radii $r_N,r_{N+1},\dots,r_{N+M}$.
+all of the balls is infinite.
+Suppose that we managed to fit the balls of radii $r_N,r_{N+1},\dots,r_{N+M}$.
 Let us show that the same centres and doubled radii cover the unit cube in its
 entirety\dots
 Indeed, if we could find a point in the unit cube that did not get covered by
-the spheres with doubled radii then that means that its distance to any sphere
-is $\geq r_{N+M}$, which means we could have fit one more sphere with its centre
-at that point and with radius $r_{N+M+1}\leq r_{N+M}$.
+the balls with doubled radii then that means that the distance from this point
+to any ball is $\geq r_{N+M}$, which means we could have fit one more ball with
+its centre at that point and with radius $r_{N+M+1}\leq r_{N+M}$.
 All constructed spheres obviously lie within the cube with side length 2.
-This means that if $V$ is the total volume of the spheres we used then $8V>1$
+This means that if $V$ is the total volume of the balls we embedded then $8V>1$
 and so $V>1/8$, which comprises $1/64$ of the volume of the cube with side
 length 2.
 
 Three people solved this problem: S.E. Belkin (Moscow), S.V. Konjagin (Moscow),
 and V.V. Sologubov (RSFSR-2).
-60 people did not attempt the problem.
-\item
-\textit{A vertex of a curve refers to a point that is an extremum of the
-curvature.
+60 people did not attempt the problem.\\
+
+\textbf{5.}\quad\textit{A vertex of a curve is a point that is an where the
+curvature has an extremum.
 Prove that any smooth (infinitely differentiable) closed convex curve contains
 at least four vertices.}
 
 \textit{Solution.}
-If $(x_1(s),x_2(s))$ is the equation for a curve with its natural parameter ($s$
-is the length of the path), then, as we know,
-$$\ddot x_1(s)=\text-k(s)\dot x_2(s),\quad\ddot x_2(s)=k(s)\dot x_1(s).$$
-From here it follows that for any numbers $a_0$, $a_1$, and $a_2$
+If $(x_1(s),x_2(s))$ is the equation for a curve with an arc-length parameter
+($s$), then, as is well-known,
+$$\ddot x_1(s)=-k(s)\dot x_2(s),\quad\ddot x_2(s)=k(s)\dot x_1(s).$$
+It follows that for any numbers $a_0$, $a_1$, and $a_2$
 \begin{equation}
 \int\limits_\Gamma(a_0+a_1x_1+a_2x_2)\frac{\text dk}{\text ds}\text ds=
 a_0\int\limits_\Gamma\text dk-a_1\int\limits_\Gamma\ddot x_2\text ds+
 a_2\int\limits_\Gamma\ddot x_1\text ds=0.
 \end{equation}
-The curvature $k(s)$ has a $\Gamma$ maximum and minimum.
-If they are both singular vertices then by drawing the straight line
-$a_0+a_1x_1+a_2x_2=0$, through them we will arrive at a contradiction with
-equation (5), since $(a_0+a_1x_1+a_2x_2)\frac{\text dk}{\text ds}$ does not have
-a sign in this case.
+The curvature $k(s)$ has a maximum and minimum on $\Gamma$.
+If they were the only vertices then by drawing the straight line
+$a_0+a_1x_1+a_2x_2=0$ through them we would arrive at a contradiction with
+equation (5), since $(a_0+a_1x_1+a_2x_2)\frac{\text dk}{\text ds}$ does not
+change sign in this case.
 
 This same problem also allows the following simple geometric solution (suggested
 by S.M. Gusein-Zade).
 Let us inscribe a circle $S$ of maximum radius $r$ into curve $\Gamma$ (Fig.~4).
-Let $A$ and $B$ be the points at which the curve $\Gamma$ and $S$ touch and so
-that there are no other touching points on the arc $AB$.
+Let $A$ and $B$ be the points of tangency of the curve $\Gamma$ and the circle
+$S$ so that there are no other tangency points on the arc $AB$.
 It is easy to see that $\cup AB\leq\pi$.
 Additionally, the curvature of $\Gamma$ at points $A$ and $B$ is no larger than
-$r^{\text-1}$ and strictly less than $r^{\text-1}$ at some points near $A$ and
+$r^{-1}$ and strictly less than $r^{-1}$ at some points near $A$ and
 $B$.
-Let us translate the arc $AB$ on curve $S$ perpendicular to the line segment
-$AB$ in the direction of its bulge by the maximum possible distance such that it
-still intersects curve $\Gamma$ (at point $C$).
-In this case $C$ is the touching point of the arc and the curve $\Gamma$ and the
-curve $\Gamma$ at point $C$ is no less than $r^{\text-1}$.
-From here, the existence of at least two local curvature maxima immediately
-follows, and thus, of two minima does as well.
+Let us shift the arc $AB$ on curve $S$ orthogonally to the line segment
+$AB$ in the direction of its curvature by the maximum possible distance so that it
+still intersects the curve $\Gamma$ (at point $C$).
+In this case $C$ is the point of tangency of the arc and the curve $\Gamma$ and the
+curvature of $\Gamma$ at the point $C$ is no less than $r^{-1}$.
+Now, the existence of at least two local curvature maxima of curvature immediately
+follows, and hence so does the existence of two minima.
 
-Only one person managed to solve this problem: A.N. Drobotenko (Moldavia).
-68 people did not attempt it.
-\item
-\textit{Does there exist a complex polyhedron with 6 vertices and 15 edges in
-four-dimensional space?}
+Only one person managed to solve this problem: A.N. Drobotenko (Moldavia), while
+68 people did not attempt it.\\
+
+\textbf{6.}\quad\textit{Does there exist a complex polyhedron with 6 vertices
+and 15 edges in four-dimensional space?}
 
 \textit{Solution.}
 Such a polyhedron exists.
 It is sufficient to take any two triangles in planes $(x,y,0,0)$ and
-$(0,0,z,u)$ containing the origin and then their convex envelope.
+$(0,0,z,u)$ containing the origin and then consider their convex hull.
 As an example let us take the points
-$$A_1=(1,0,0,0),\quad A_2=(\text-1,1,0,0),\quad A_3=(\text-1,\text-1,0,0),$$
-$$A_4=(0,0,1,0),\quad A_5=(0,0,\text-1,1),\quad A_6=(0,0,\text-1,\text-1).$$
+$$A_1=(1,0,0,0),\quad A_2=(-1,1,0,0),\quad A_3=(-1,-1,0,0),$$
+$$A_4=(0,0,1,0),\quad A_5=(0,0,-1,1),\quad A_6=(0,0,-1,-1).$$
 
-For a proof that these are the points we were looking for it is sufficient for
-any pair if points $A_i$ and $A_j$ to find a linear function
-$\alpha x+\beta y+\gamma z+\delta u$, which has larger values at points $A_i$
-and $A_j$ than at any others.
-It is obvious that it is sufficient to just examine the pairs$A_i$ and $A_j$
-where $(i\leq3,j>3)$.
-The needed linear forms are easy to find.
-For example, $\text-x+y+2z$ for $A_2$ and $A_4$; $\text-x+y-z+u$ for $A_2$ and
-$A_5$; $\text-x+y-z-u$ for $A_2$ and $A_6$.
+For a proof that these are the points we were looking for it suffices for
+any pair of points $A_i$ and $A_j$ to find a linear function
+$\alpha x+\beta y+\gamma z+\delta u$, which assumes larger values at the
+points $A_i$ and $A_j$ than at any others.
+Obviously, it is sufficient to examine just the pairs $A_i$ and $A_j$ with
+$i\leq3,j>3$.
+The required linear forms are easy to find.
+For example, $-x+y+2z$ for $A_2$ and $A_4$; $-x+y-z+u$ for $A_2$ and
+$A_5$; $-x+y-z-u$ for $A_2$ and $A_6$.
 
-This problem was only solved by A.B. Alexandrov (Leningrad).
-59 people did not attempt it.
+This problem was only solved by A.B. Alexandrov (Leningrad) and 59 people did
+not attempt it.
 
 \textit{Remark.}
 The last problem reflects a rather particular case of an interesting phenomenon:
 \textit{in four-dimensional space for any $n$ it is possible to find such a
-convex polyhedron with $n$ vertices such that from any vertex it is possible to
-``see'' any other vertex, meaning that line segments connecting any two vertices
+convex polyhedron with $n$ vertices that from any vertex one can
+``see'' any other vertex, that is line segments connecting any two vertices
 are edges of this polyhedron.}
-As an example of such a polyhedron, we can take, for example, the convex
+As an example of such a polyhedron, one can take, for example, the convex
 envelope of any $n$ distinct points that lie on the curve
 \begin{equation}
-x(t)=(t,t^2,t^3,t^4),\quad\text-\infty<t<+\infty.
+x(t)=(t,t^2,t^3,t^4),\quad-\infty<t<+\infty.
 \end{equation}
 
-This curve has the following amazing property: if $x_1=x(t_1)$ and $x_2=x(t_2)$
-are two of its distinct points then there exists a cross-dimensional hyperplane
-that passes through them such that all the other points lie strictly on one side
-of it.
-In fact, let us pass the hyperplane of type $l(x)=c$ ($l$ is the linear form)
-through points $x_1$ and $x_2$, parallel to the tangent vectors to the curve at
-those points (it is easy to verify that a vector passing parallel to the chord
+This curve has the following remarkable property: if $x_1=x(t_1)$ and
+$x_2=x(t_2)$ are two distinct points then there exists such a three-dimensional
+hyperplane passing through them so that all the other points lie strictly on
+one side of it.
+Indeed, let us draw the hyperplane of type $l(x)=c$ ($l$ is a linear form)
+through points $x_1$ and $x_2$, and parallel to the tangent vectors to the curve
+at both points (it is easy to verify that a vector parallel to the chord
 $x_1x_2$ and these tangent vectors are linearly independent).
-Then $l(x(t))-c$ is a fourth-degree polynomial with two multiple roots, $t_1$
+Then $l(x(t))-c$ is a polynomial of degree 4 with two multiple roots, $t_1$
 and $t_2$, and therefore $l(x(t))-c$ preserves its sign.
-\end{enumerate}
 \end{document}
